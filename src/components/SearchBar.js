@@ -9,9 +9,9 @@ export default class SearchBar extends Component {
     }
     render() {
         return (
-            <div>
+            <div className='card p-2 m-2'>
                 <form class="form-group" onSubmit={this.inputSubmit}>
-                    <label htmlFor="search">Search:</label>
+                    <label htmlFor="search" className="font-weight-bold">Search:</label>
                     <input className="form-control" name="search" type="text" value={this.state.term} onChange={(e)=>{this.setState({term:e.target.value})}}/>
                 </form>
             </div>
